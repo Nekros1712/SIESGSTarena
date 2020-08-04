@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto',sans-serif;
+    overflow-x: hidden;
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.blockquote{
+    font-size: medium;
+}
+
+.card-block {
+    min-height: 220px;
+}
+#box::-webkit-scrollbar { width: 0 !important }
+body::-webkit-scrollbar { width: 0 !important }
+#box {
+    overflow-y: visible;
+    overflow-x: auto;
+    vertical-align: text-top;   
+    background-color: #fff5eb;
+    padding: 0;
+    width: 100%;
+    clear: both;
+    border-spacing: 5px;
+}
+.intro-section {
+    display: table-cell;
+}
+  
