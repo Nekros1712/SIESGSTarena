@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIESGSTarena</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        @media screen and (min-width: 1200px) {
+            .pos {
+                padding-left: 425px;
+            }
+        }
+
+        @media screen and (min-width: 1000px) and (max-width: 1199px) {
+            .pos {
+                padding-left: 310px;
+            }
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .padding-0 {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .blockquote {
+            font-size: medium;
+        }
+
+        .card-block {
+            min-height: 220px;
+        }
+
+        #box::-webkit-scrollbar {
+            width: 0 !important
+        }
+
+        body::-webkit-scrollbar {
+            width: 0 !important
+        }
+
+        #box {
+            overflow-y: visible;
+            overflow-x: auto;
+            vertical-align: text-top;
+            background-color: #fff5eb;
+            padding: 0;
+            width: 100%;
+            clear: both;
+            border-spacing: 5px;
+        }
+
+        .intro-section {
+            display: table-cell;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top" style="background-color: black;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon" style="color: floralwhite;"></span>
+            </button><span></span>
+            <div class="collapse navbar-collapse pos" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"
+                                style="color: #F9AA33;"><b>About</b></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="./competition.html"><span
+                                class="fa fa-info fa-lg">Competition</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="./openSource.html"><span
+                                class="fa fa-user-circle-o fa-lg">Open Source</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row" style="padding-top: 50px;">
+        <div class="col-lg-12 text-center mt-4">
+            <h1 class="font-weight-bold">About Us</h1>
+        </div>
+        <div class="col-lg-5 mb-3 text-center mx-auto">
+            <h5>SIESGSTarena is the name of the CodeChef SIESGST Campus Chapter
+                and an online platform for conducting programming competitions.</h5>
+        </div>
+    </div>
+    <div class="border-top border-dark col col-lg-10 mx-auto"></div>
+    <div class="row my-4">
+        <div class="col-lg-5 align-self-center  offset-lg-1">
+            <h1 class="display-4 text-center text-primary">Our Mission</h1>
+            <br>
+            <p class="font-weight-bold" id="mission">
+            <h3 class="text-center">Our mission is to help programmers learn,
+                share and improve themselves in the world
+                of algorithms and competitive programming</h3>
+            </p>
+        </div>
+        <div class="col-lg-5 align-self-center">
+            <div class="card bg-light border-primary">
+                <div class="card-body">
+                    <h4 class="card-title text-center font-weight-bold text-primary">From Classroom To WWW</h4>
+                    <span class="font-weight-bold">Founded</span>
+                    <br>
+                    2016
+                    <br><br>
+                    <span class="font-weight-bold">Founder</span>
+                    <br>
+                    Omkar Prabhu, Sumitra Iyer
+                    <br><br>
+                    <span class="font-weight-bold">First Classroom Contest</span>
+                    <br>
+                    October 31, 2015
+                    <br><br>
+                    <span class="font-weight-bold">Official Platform Launch</span>
+                    <br>
+                    November 18, 2018 (18-11-18)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+        <h2 class="font-weight-bold">Testimonials</h2>
+        <div class="row flex-row flex-nowrap my-4" id="box">
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-warning">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>A place to explore the incredible world of coding and a team with which solving any crazy
+                            problem becomes possible.</p>
+                        <footer class="blockquote-footer"><small class="text-muted"></small>by Ninad Chavan<em>
+                                (NinadC)</em></footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <div class="card pad-2 p-3 border-success">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>Fun isn't something one considers when creating problems. But this.... does put a smile on my
+                            face.</p>
+                        <footer class="blockquote-footer"><small class="text-muted"></small>by Rahul Sawantdesai<em>
+                                (rsd511)</em></footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-primary text-center p-4">
+                    <blockquote class="blockquote mb-0"></blockquote>
+                    <p>Building the platform helped us solve a lot of technical challenges which we never thought of.
+                        I'm always excited to see what's the next problem we'll be solving and the creative solutions
+                        which comes with it.</p>
+                    <footer class="blockquote-footer"><small></small>by Omkar Prabhu<em> (prabhuomkar)</em></footer>
+                </div>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <div class="card p-1 border-danger">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>All of us learn new things but when we actually implement it and do mistakes is when we learn
+                            more and more. CodeChef Chapter team has offered me a positive environment where everyone is
+                            working with passion towards perfecting a work.</p>
+                        <footer class="blockquote-footer"><small class="text-muted"></small>by Shambhavi Sudarsan<em>
+                                (shambhavi)</em></footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-success">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>Every puzzle has a solution , every question has an answer, the real puzzle lies in speed,
+                            and the real question is in your head. Can I solve this?</p>
+                        <footer class="blockquote-footer"><small class="text-muted"></small>by Harsh Agrawal<em>
+                                (harshagr18))</em></footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-warning">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>A battleground where you contend to conquer, with a lot to Learn, Run and Debug...</p>
+                        <footer class="blockquote-footer"><small class="text-muted"></small>by Cibin Chandrashekhar<em>
+                                (NinadC)</em></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2500,
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
