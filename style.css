@@ -212,3 +212,8 @@ body {
     margin-right: 8px;
     color: #fff;
 }
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
