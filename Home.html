@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <style>
             html, body {
                 overflow-x: hidden;
@@ -20,11 +21,11 @@
 
         <div id="Comp">
 
-            <h1 class="my-5 text-center">Competitions</h1>
+            <h1 class="my-5 text-center" data-aos="fade-down">Competitions</h1>
             
             <div class="container-fluid">
             <div class="row my-4 d-flex justify-content-center px-3">
-                <div class="card col-12 col-lg-3 mb-3" style="height: 25rem; box-shadow: 6px 6px 3px grey;">
+                <div class="card col-12 col-lg-3 mb-3" style="height: 25rem; box-shadow: 6px 6px 3px grey;" data-aos="fade-right">
                     <div class="card-body" style="text-align: center;">
                     <h4 class="card-title">Turing Cup</h4>
                     <img src="./img/turing.JPG" class="img-fluid" style="padding-bottom: 15px;" height="170px" width="300px" alt="Turing Cup">
@@ -33,7 +34,7 @@
                     <a href="http://arena.siesgst.ac.in/turingcup" class="card-link">Register Now</a>
                     </div>
                 </div>
-                <div class="card col-12 col-lg-3 offset-lg-1 mb-3" style="height: 25rem; box-shadow: 6px 6px 3px grey;">
+                <div class="card col-12 col-lg-3 offset-lg-1 mb-3" style="height: 25rem; box-shadow: 6px 6px 3px grey;" data-aos="fade-up">
                     <div class="card-body" style="text-align: center;">
                     <h4 class="card-title">Single Round Matches</h4>
                     <img src="./img/srm.jpeg" class="img-fluid" style="padding-bottom: 15px;" height="170px" width="300px" alt="Single Round Matches">
@@ -42,7 +43,7 @@
                     <a href="http://arena.siesgst.ac.in/contests" class="card-link">Head-on to Contests</a>
                     </div>
                 </div>
-                <div class="card col-12 col-lg-3 offset-lg-1 mb-3" style="height: 25rem; box-shadow: 6px 6px 3px grey;">
+                <div class="card col-12 col-lg-3 offset-lg-1 mb-3" style="height: 25rem; box-shadow: 6px 6px 3px grey;" data-aos="fade-left">
                     <div class="card-body" style="text-align: center;">
                     <h4 class="card-title">Bug4Ever</h4>
                     <img src="./img/bug4ever.JPG" class="img-fluid" style="padding-bottom: 15px;" height="170px" width="300px" alt="Bug4Ever">
@@ -164,23 +165,22 @@
             </div>
         </div>
 
-        <div id="About">
-            <div>
-                <a role="button" id="btn2" class="btn btn-primary float-left" style="width: 10rem;">Competitions</a>
-                <a role="button" id="btn3" class="btn btn-primary float-right" style="width: 10rem;">Open Source</a>
-            </div>
-            <h1 class="my-3 text-center">SIESGSTarena</h1>
-
-            <div class="card card-image" style="background-image: url(./img/jumbotron_bg.jpg);">
+        <div id="About" style="background-color: rgb(184, 179, 179);">
+            <div id="navbar" class="word-wrap" style="line-height: 50px;">
+                <a target="_blank" href="http://arena.siesgst.ac.in/" id="logo"><img src="img/logo.png" id="smallLogo" alt="Logo"><p id="hideThis"> <br> SIESGSTarena is the name of the CodeChef SIESGST Campus Chapter and an online platform for conducting programming competitions.</p></a>
+              </div>
+            <div class="card card-image" style="background-image: url(./img/jumbotron_bg.jpg); padding-top: 380px; padding-bottom: 75px;">
                 <div class="text-white text-center rgba-stylish-strong px-4">
-                    <div class="py-5" style="color:black">
+                    <div class="py-3" style="color:black">
                         <div class="col-lg-7 px-md-5 mx-auto my-4 text-center">
                             <h1 class="font-weight-bold">Our Mission</h1>
                             <h4>To help programmers learn, share and improve 
                                 themselves in the world of algorithms and
                                 competitive programming.</h4>
                         </div>
-                        <a class="btn bg-primary text-light" href="http://www.arena.siesgst.ac.in"><i class="fa fa-link"></i> Visit Site</a>
+                        <div>
+                            <a class="btn bg-primary text-light" style="width: 200px;" href="http://www.arena.siesgst.ac.in"><i class="fa fa-link"></i> Visit Site</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -265,6 +265,8 @@
                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
                               <span class="sr-only">Next</span>
                             </a>
+                            <a role="button" id="btn2" class="btn btn-primary float-left" style="width: 10rem;">Competitions</a>
+                            <a role="button" id="btn3" class="btn btn-primary float-right" style="width: 10rem;">Open Source</a>
                         </div>
                     </div>
                 </div>
@@ -276,6 +278,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             $("#btn1").on('click', function() {
             $("#Comp, #OpenSrc").hide();
@@ -305,7 +308,7 @@
 
         <script>
             $(document).ready(function() {
-            $('#About, #OpenSrc').hide();
+            $('#Comp, #OpenSrc').hide();
             });
         </script>
 
@@ -335,6 +338,38 @@
             }
             
             carousel();
+        </script>
+
+        <script>
+            AOS.init({
+                duration: 1500,
+                });
+            $("#btn2, #btn5").click(function(){
+                AOS.init({
+                duration: 1500,
+                });
+                AOS.refresh();
+                AOS.refreshHard();
+            });
+        </script>
+
+        <script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+                document.getElementById("navbar").style.padding = "0px 0px 0px 0px";
+                document.getElementById("hideThis").style.display = "none";
+                document.getElementById("smallLogo").style.height = "75px";
+                document.getElementById("smallLogo").style.width = "75px";
+            } else {
+                document.getElementById("navbar").style.padding = "20px 10px 20px 0px";
+                document.getElementById("logo").style.fontSize = "35px";
+                document.getElementById("hideThis").style.display = "block";
+                document.getElementById("smallLogo").style.height = "150px";
+                document.getElementById("smallLogo").style.width = "150px";
+            }
+            }
         </script>
 
     </body>
