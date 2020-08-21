@@ -25,29 +25,29 @@
             <div class="row my-4 d-flex justify-content-center">
                 <div class="card col-12 col-lg-3" style="height: 25rem; box-shadow: 10px 10px 4px grey;">
                     <div class="card-body" style="text-align: center;">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <h4 class="card-title">Turing Cup</h4>
+                    <img src="./turing.JPG" class="img-fluid" style="padding-bottom: 15px;" height="170px" width="300px" alt="Turing Cup">
+                    <h6 class="card-subtitle mb-2 text-muted">Annual</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <a href="http://arena.siesgst.ac.in/turingcup" class="card-link">Register Now</a>
                     </div>
                 </div>
                 <div class="card col-12 col-lg-3 offset-lg-1" style="height: 25rem; box-shadow: 10px 10px 4px grey;">
                     <div class="card-body" style="text-align: center;">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <h4 class="card-title">Single Round Matches</h4>
+                    <img src="./WhatsApp Image 2020-08-18 at 7.12.05 PM.jpeg" class="img-fluid" style="padding-bottom: 15px;" height="170px" width="300px" alt="Single Round Matches">
+                    <h6 class="card-subtitle mb-2 text-muted">Periodical</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <a href="http://arena.siesgst.ac.in/contests" class="card-link">Head-on to Contests</a>
                     </div>
                 </div>
                 <div class="card col-12 col-lg-3 offset-lg-1" style="height: 25rem; box-shadow: 10px 10px 4px grey;">
                     <div class="card-body" style="text-align: center;">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <h4 class="card-title">Bug4Ever</h4>
+                    <img src="./bug4ever.JPG" class="img-fluid" style="padding-bottom: 15px;" height="170px" width="300px" alt="Bug4Ever">
+                    <h6 class="card-subtitle mb-2 text-muted">Annual</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <a href="http://arena.siesgst.ac.in/bug4ever" class="card-link">Register Now</a>
                     </div>
                 </div>
             </div>
@@ -212,13 +212,13 @@
         </script>
 
         <script>
-            var $jq = jQuery.noConflict();
-            $jq.js = function (el) {
-                return $jq('[data-js=' + el + ']')
+            $js = function (el) {
+                return $('[data-js=' + el + ']')
             };
             
             function carousel() {
-            $jq.js('timeline-carousel').slick({
+            $js('timeline-carousel').slick({
+                lazyLoad: 'progressive',
                 infinite: false,
                 arrows: false,
                 dots: true,
