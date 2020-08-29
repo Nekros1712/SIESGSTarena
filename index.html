@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css">
         <style>
             html, body {
                 overflow-x: hidden;
@@ -20,13 +19,13 @@
 
     <body>
 
-        <div id="Comp" class="w3-conntainer">
+        <div id="Comp">
 
-            <h1 class="my-5 text-center w3-center w3-animate-top" data-aos="fade-down">Competitions</h1>
+            <h1 id="head2" class="my-5 text-center" data-aos="fade-down">Competitions</h1>
             
             <div class="container-fluid">
             <div class="row my-4 d-flex justify-content-center px-3">
-                <div class="card col-12 col-lg-3 mb-3 w3-animate-left" style="height: 25rem; box-shadow: 6px 6px 3px grey;" data-aos="fade-right">
+                <div class="card col-12 col-lg-3 mb-3" style="height: 25rem; box-shadow: 6px 6px 3px grey;" data-aos="fade-right">
                     <div class="card-body" style="text-align: center;">
                     <h4 class="card-title">Turing Cup</h4>
                     <img src="./img/turing.JPG" class="img-fluid" style="padding-bottom: 15px;" height="170px" width="300px" alt="Turing Cup">
@@ -35,7 +34,7 @@
                     <a href="http://arena.siesgst.ac.in/turingcup" class="card-link">Register Now</a>
                     </div>
                 </div>
-                <div class="card col-12 col-lg-3 offset-lg-1 mb-3 w3-animate-bottom" style="height: 25rem; box-shadow: 6px 6px 3px grey;" data-aos="fade-up">
+                <div class="card col-12 col-lg-3 offset-lg-1 mb-3" style="height: 25rem; box-shadow: 6px 6px 3px grey;" data-aos="fade-up">
                     <div class="card-body" style="text-align: center;">
                     <h4 class="card-title">Single Round Matches</h4>
                     <img src="./img/srm.jpeg" class="img-fluid" style="padding-bottom: 15px;" height="170px" width="300px" alt="Single Round Matches">
@@ -44,7 +43,7 @@
                     <a href="http://arena.siesgst.ac.in/contests" class="card-link">Head-on to Contests</a>
                     </div>
                 </div>
-                <div class="card col-12 col-lg-3 offset-lg-1 mb-3 w3-animate-right" style="height: 25rem; box-shadow: 6px 6px 3px grey;" data-aos="fade-left">
+                <div class="card col-12 col-lg-3 offset-lg-1 mb-3" style="height: 25rem; box-shadow: 6px 6px 3px grey;" data-aos="fade-left">
                     <div class="card-body" style="text-align: center;">
                     <h4 class="card-title">Bug4Ever</h4>
                     <img src="./img/bug4ever.JPG" class="img-fluid" style="padding-bottom: 15px;" height="170px" width="300px" alt="Bug4Ever">
@@ -66,7 +65,7 @@
         <div id="OpenSrc">
             <!--Timeline carousel-->
             <div class="timeline-carousel">
-                <h1 class="my-3 text-center" style="padding-bottom: 20px;">Open Source Projects</h1>
+                <h1 id="head3" class="my-3 text-center" style="padding-bottom: 20px;">Open Source Projects</h1>
                 <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
                     <!--Timeline item-->
                     <div class="timeline-carousel__item">
@@ -280,13 +279,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        
         <script>
             $("#btn1").on('click', function() {
             $("#Comp, #OpenSrc").hide();
             $("#About").show();
             });
             $("#btn2").on('click', function() {
-            $("#About, #Comp").hide();
+            $("#About, #OpenSrc").hide();
             $("#Comp").show();
             });
             $("#btn3").on('click', function() {
@@ -314,31 +314,32 @@
         </script>
 
         <script>
-            $js = function (el) {
-                return $('[data-js=' + el + ']')
-            };
-            
-            function carousel() {
-            $js('timeline-carousel').slick({
-                infinite: false,
-                arrows: false,
-                dots: true,
-                autoplay: true,
-                speed: 1000,
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                responsive: [
-                {
-                    breakpoint: 800,
-                    settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                    }
-                }]
-            });
-            }
-            
-            carousel();
+            $(document).ready(function() {
+                $js = function (el) {
+                    return $('[data-js=' + el + ']')
+                };
+                
+                function carousel() {
+                $js('timeline-carousel').slick({
+                    infinite: false,
+                    arrows: false,
+                    dots: true,
+                    autoplay: true,
+                    speed: 1000,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    responsive: [
+                    {
+                        breakpoint: 800,
+                        settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                        }
+                    }]
+                });
+                }
+                carousel();
+                })
         </script>
 
         <script>
@@ -358,7 +359,8 @@
             window.onscroll = function() {scrollFunction()};
 
             function scrollFunction() {
-            if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+            if(window.screen.width >= 425) {
+                if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
                 document.getElementById("navbar").style.padding = "0px 0px 0px 0px";
                 document.getElementById("hideThis").style.display = "none";
                 document.getElementById("smallLogo").style.height = "75px";
@@ -374,6 +376,36 @@
                 document.getElementById("navbar").style.position = "relative"
                 document.getElementById("ourMission").style.paddingTop = "50px"
                 }
+            }
+            if(window.screen.width < 425) {
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("navbar").style.padding = "0px 0px 0px 0px";
+                document.getElementById("hideThis").style.display = "none";
+                document.getElementById("smallLogo").style.height = "75px";
+                document.getElementById("smallLogo").style.width = "75px";
+                document.getElementById("navbar").style.position = "fixed"
+                document.getElementById("ourMission").style.paddingTop = "20rem"
+            }else{
+                document.getElementById("navbar").style.padding = "20px 10px 20px 0px";
+                document.getElementById("logo").style.fontSize = "35px";
+                document.getElementById("hideThis").style.display = "block";
+                document.getElementById("smallLogo").style.height = "150px";
+                document.getElementById("smallLogo").style.width = "150px";
+                document.getElementById("navbar").style.position = "relative"
+                document.getElementById("ourMission").style.paddingTop = "50px"
+                }
+            }
+            }
+        </script>
+
+        <script>
+            blow = document.getElementById(Btn2);
+            blow.onclick = function() {
+                AOS.refresh();
+            }
+            blow2 = document.getElementById(Btn5);
+            blow2.onclick = function() {
+                AOS.refresh();
             }
         </script>
 
